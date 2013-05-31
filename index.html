@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="angularjs-starter">
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Custom Plunker</title>
+
+    <link rel="stylesheet" type="text/css" href="http://eclipse.org/orion/editor/releases/2.0/built-editor.css"/>
+    <script type="text/javascript" src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script type="text/javascript" src="angular-orion-directive.js"></script>
+    <script>
+      var app = angular.module('angularjs-starter', ['angular.directives-orion']);
+
+      app.controller('MainCtrl', function($scope) {
+        $scope.firstName = "var aVariable = 'Super Patate';";
+      });
+    </script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    {{firstName}}
+    <ang:orion editor-class='tralala' editor-model="firstName" />
+  </body>
+
+</html>
