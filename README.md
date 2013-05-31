@@ -12,7 +12,7 @@ Load Orion and this directive with the following code:
 
 ```html
 <script type="text/javascript" src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js"></script>
-<script src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js"></script>
+<script type="text/javascript" src="http://eclipse.org/orion/editor/releases/2.0/built-editor.min.js"></script>
 ```
 
 The latest Orion build can be retrieved on its officiel website:
@@ -30,4 +30,8 @@ Use the directive in your HTML files with the following code:
 <ang:orion editor-class='classNameWantedForYourEditor' editor-model="nameOfTheAttributeInYour$Scope" />
 ```
 
+A demonstration is visible in the file index.html.
+
+
+## Issues
 The data binding is currently only setup for the initialization of the editor. It will be fixed later on.
